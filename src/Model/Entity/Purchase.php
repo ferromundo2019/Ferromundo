@@ -32,6 +32,7 @@ class Purchase extends Entity
         'user_id' => true,
         'document_type' => true,
         'date' => true,
+        'purchased' => true,
         'supplier' => true,
         'user' => true,
         'purchase_details' => true

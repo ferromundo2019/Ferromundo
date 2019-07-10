@@ -25,6 +25,8 @@ $this->start('tb_actions');
             <th><?= $this->Paginator->sort('user_id'); ?></th>
             <th><?= $this->Paginator->sort('document_type'); ?></th>
             <th><?= $this->Paginator->sort('date'); ?></th>
+            <th><?= $this->Paginator->sort('detail+'); ?></th>
+            <th><?= $this->Paginator->sort('purchased'); ?></th>
             <th class="actions"><?= __('Actions'); ?></th>
         </tr>
     </thead>
@@ -40,6 +42,18 @@ $this->start('tb_actions');
             </td>
             <td><?= h($purchase->document_type) ?></td>
             <td><?= h($purchase->date) ?></td>
+            <td><?php if($purchase->purchased != 1){
+                echo $this->Html->link('', ['controller' => 'PurchaseDetails', 'action' => 'detail', $purchase->id], ['title' => __('+detail'), 'class' => 'btn btn-default glyphicon glyphicon-plus']);
+            }
+            else{
+                echo h(__('Purchased'));
+            } ?></td>
+            <td><?php if($purchase->purchased != 1){
+                echo $this->Form->postLink('', ['action' => 'purchased', $purchase->id], ['confirm' => __('Are you sure to purchased # {0}? This action is irreversible' , $purchase->id), 'title' => __('Sell'), 'class' => 'btn btn-default glyphicon glyphicon-piggy-bank']);
+            }
+            else{
+                echo h(__('Purchased'));
+            } ?></td>
             <td class="actions">
                 <?= $this->Html->link('', ['action' => 'view', $purchase->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>
                 <?= $this->Html->link('', ['action' => 'edit', $purchase->id], ['title' => __('Edit'), 'class' => 'btn btn-default glyphicon glyphicon-pencil']) ?>

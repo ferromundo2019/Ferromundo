@@ -85,7 +85,8 @@ class SalesController extends AppController
             $this->Flash->error(__('The sale could not be saved. Please, try again.'));
         }
         $users = $this->Sales->Users->find('list', ['limit' => 200]);
-        $this->set(compact('sale', 'users'));
+        $user = $this->Auth->user('id');
+        $this->set(compact('sale', 'users', 'user'));
     }
 
     /**

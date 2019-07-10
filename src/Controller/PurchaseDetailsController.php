@@ -54,6 +54,30 @@ class PurchaseDetailsController extends AppController
         if ($this->request->is('post')) {
             $purchaseDetail = $this->PurchaseDetails->patchEntity($purchaseDetail, $this->request->getData());
             
+                if ($this->PurchaseDetails->save($purchaseDetail)) {
+                    $this->Flash->success(__('The purchase detail has been saved.'));
+
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('The purchase detail could not be saved. Please, try again.'));
+            
+
+        }
+        $options = array();
+        foreach ($this->paginate($this->PurchaseDetails->Purchases->find()->where(['id' >= 0])) as $purchase){
+            $options[$purchase->id] = $purchase->id.') '.$this->PurchaseDetails->Purchases->Suppliers->get($purchase->supplier_id)->social_reason.' - '.$this->PurchaseDetails->Purchases->Users->get($purchase->user_id)->name;
+        }
+        $articles = $this->PurchaseDetails->Articles->find('list', ['limit' => 200]);
+        $purchases = $this->PurchaseDetails->Purchases->find('list', ['limit' => 200]);
+        $this->set(compact('purchaseDetail', 'articles', 'purchases', 'options'));
+    }
+
+    public function detail($id=null)
+    {
+        $purchaseDetail = $this->PurchaseDetails->newEntity();
+        if ($this->request->is('post')) {
+            $purchaseDetail = $this->PurchaseDetails->patchEntity($purchaseDetail, $this->request->getData());
+            
             $quantity = $this->request->getData('quantity');
             $article_id = $this->request->getData('article_id');
             $article = $this->PurchaseDetails->Articles->get($article_id);
@@ -76,9 +100,8 @@ class PurchaseDetailsController extends AppController
         }
         $articles = $this->PurchaseDetails->Articles->find('list', ['limit' => 200]);
         $purchases = $this->PurchaseDetails->Purchases->find('list', ['limit' => 200]);
-        $this->set(compact('purchaseDetail', 'articles', 'purchases', 'options'));
+        $this->set(compact('purchaseDetail', 'articles', 'purchases', 'options', 'id'));
     }
-
     /**
      * Edit method
      *

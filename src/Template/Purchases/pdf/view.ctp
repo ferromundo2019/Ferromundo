@@ -57,6 +57,7 @@
           </tr>
         </tbody>
       </table>
+      <?php if($purchase->purchased == 1){ ?><h2>PURCHASE MADE</h2><?php } ?>
       <div id="notices">
         <div>NOTICE:</div>
         <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>

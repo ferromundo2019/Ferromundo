@@ -27,6 +27,7 @@ $this->start('tb_actions');
             <th><?= $this->Paginator->sort('user_id'); ?></th>
             <th><?= $this->Paginator->sort('document_type'); ?></th>
             <th><?= $this->Paginator->sort('date'); ?></th>
+            <th><?= $this->Paginator->sort('detail+'); ?></th>
             <th><?= $this->Paginator->sort('sold'); ?></th>
             <th class="actions"><?= __('Actions'); ?></th>
         </tr>
@@ -40,6 +41,12 @@ $this->start('tb_actions');
             </td>
             <td><?= h($sale->document_type) ?></td>
             <td><?= h($sale->date) ?></td>
+            <td><?php if($sale->sold != 1){
+                echo $this->Html->link('', ['controller' => 'SaleDetails', 'action' => 'detail', $sale->id], ['title' => __('+detail'), 'class' => 'btn btn-default glyphicon glyphicon-plus']);
+            }
+            else{
+                echo h(__('Sold'));
+            } ?></td>
             <td><?php if($sale->sold != 1){
                 echo $this->Form->postLink('', ['action' => 'sold', $sale->id], ['confirm' => __('Are you sure to sell # {0}? This action is irreversible' , $sale->id), 'title' => __('Sell'), 'class' => 'btn btn-default glyphicon glyphicon-piggy-bank']);
             }

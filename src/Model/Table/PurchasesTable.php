@@ -75,6 +75,10 @@ class PurchasesTable extends Table
             ->date('date')
             ->allowEmptyDate('date');
 
+        $validator
+            ->boolean('purchased')
+            ->allowEmptyString('purchased', false);
+
         return $validator;
     }
 

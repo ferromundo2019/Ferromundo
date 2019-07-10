@@ -63,12 +63,37 @@ class SaleDetailsController extends AppController
           
         }
         $options = array();
-        foreach ($this->paginate($this->SalesDetails->Sales->find()->where(['sold' != 0])) as $sale){
-            $options[$sale->id] = $sale->id.') '.$this->SaleDetails->Sales->Users->get($sale->user_id)->name;
+        foreach ($this->paginate($this->SaleDetails->Sales->find()->where(['sold' != 0])) as $sale){
+            if($sale->sold != 1){   
+                $options[$sale->id] = $sale->id.') '.$this->SaleDetails->Sales->Users->get($sale->user_id)->name;
+            }
         }
-        $articles = $this->SaleDetails->Articles->find('list', ['limit' => 200])
+        $articles = $this->SaleDetails->Articles->find('list', ['limit' => 200]);
         $sales = $this->SaleDetails->Sales->find('list', ['limit' => 200]);
         $this->set(compact('saleDetail', 'articles', 'sales', 'options'));
+    }
+
+    public function detail($id = null)
+    {
+        $saleDetail = $this->SaleDetails->newEntity();
+        if ($this->request->is('post')) {
+            $saleDetail = $this->SaleDetails->patchEntity($saleDetail, $this->request->getData());
+
+                if ($this->SaleDetails->save($saleDetail)) {
+                    $this->Flash->success(__('The sale detail has been saved.'));
+
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('The sale detail could not be saved. Please, try again.'));
+          
+        }
+        $options = array();
+        foreach ($this->paginate($this->SaleDetails->Sales->find()->where(['sold' != 0])) as $sale){
+            $options[$sale->id] = $sale->id.') '.$this->SaleDetails->Sales->Users->get($sale->user_id)->name;
+        }
+        $articles = $this->SaleDetails->Articles->find('list', ['limit' => 200]);
+        $sales = $this->SaleDetails->Sales->find('list', ['limit' => 200]);
+        $this->set(compact('saleDetail', 'articles', 'sales', 'options', 'id'));
     }
 
     /**

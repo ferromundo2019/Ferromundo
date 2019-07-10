@@ -62,6 +62,10 @@ $this->end();
             <td><?= __('Date') ?></td>
             <td><?= h($purchase->date) ?></td>
         </tr>
+        <tr>
+            <td><?= __('Purchased') ?></td>
+            <td><?= $purchase->purchased ? __('Yes') : __('No').' '.$this->Form->postLink('', ['action' => 'purchased', $purchase->id], ['confirm' => __('Are you sure to buy # {0}? This action is irreversible' , $purchase->id), 'title' => __('Purchase'), 'class' => 'btn btn-default glyphicon glyphicon-piggy-bank']); ?></td>
+        </tr>
     </table>
 </div>
 

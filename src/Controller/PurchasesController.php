@@ -214,4 +214,41 @@ class PurchasesController extends AppController
             }
         }
     }
+
+    public function purchased($id = null){
+        if($this->Purchases->findById($id)->firstOrFail()->purchased == 1){
+            return $this->redirect(['action' => 'index']);
+        }
+
+        $purchase = $this->Purchases->get($id, [
+            'contain' => ['Suppliers', 'Users', 'PurchaseDetails']
+        ]);
+
+        $articulos = array();
+        foreach($purchase->purchase_details as $detalles){
+            if(array_key_exists($detalles->article_id, $articulos)){
+                $articulos[$detalles->article_id] += $detalles->quantity;
+            }
+            else{
+                $articulos[$detalles->article_id] = $detalles->quantity;
+            }
+        }
+
+        foreach($articulos as $clave=>$valor){
+            $article = $this->Purchases->PurchaseDetails->Articles->get($clave);
+            $cantidad = array('quantity'=>0);
+            $cantidad['quantity'] = $article->quantity+$valor;
+            
+            $article = $this->Purchases->PurchaseDetails->Articles->patchEntity($article, $cantidad);
+            $this->Purchases->PurchaseDetails->Articles->save($article);
+            
+            
+        }
+        $purchase = $this->Purchases->get($id);
+        $compra = array('purchased'=>1);
+        $purchase = $this->Purchases->patchEntity($purchase, $compra);
+        $this->Purchases->save($purchase);
+        $this->Flash->success(__('Purchase made successfully'));
+        return $this->redirect(['action' => 'index']);
+    }
 }
