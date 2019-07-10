@@ -1,0 +1,380 @@
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+msgid "List Roles"
+msgstr "Listado de Roles"
+
+msgid "New Role"
+msgstr "Nuevo Rol"
+
+msgid "List Purchases"
+msgstr "Lista de Compras"
+
+msgid "New Purchase"
+msgstr "Nueva Compra"
+
+msgid "List Sales"
+msgstr "Lista de Ventas"
+
+msgid "New Sale"
+msgstr "Nueva Venta"
+
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+msgid "Delete User"
+msgstr "Eliminar Usuario"
+
+msgid "List Users"
+msgstr "Lista de Usuarios"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "id"
+msgstr "código"
+
+msgid "email"
+msgstr "correo electrónico"
+
+msgid "password"
+msgstr "Contraseña"
+
+msgid "name"
+msgstr "Nombre"
+
+msgid "Surname"
+msgstr "Apellido"
+
+msgid "phone"
+msgstr "Teléfono"
+
+msgid "created"
+msgstr "creado"
+
+msgid "modified"
+msgstr "modificado"
+
+msgid "View"
+msgstr "Ver"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "¿Está seguro de eliminar a # {0}?"
+
+msgid "first"
+msgstr "primero"
+
+msgid "previous"
+msgstr "anterior"
+
+msgid "next"
+msgstr "siguiente"
+
+msgid "last"
+msgstr "último"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Página {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}} total"
+
+msgid "Spanish"
+msgstr "Español"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Suppliers"
+msgstr "Proveedores"
+
+msgid "Articles"
+msgstr "Artículos"
+
+msgid "Logout"
+msgstr "Cerrar Sesión"
+
+msgid "Contact"
+msgstr "Catáctenos"
+
+msgid "Login"
+msgstr "Iniciar sesión"
+
+msgid "Sign Up"
+msgstr "Registrarse"
+
+msgid "Welcome To FERROMUNDO S.A.C.!"
+msgstr "Bienvenido a FERROMUNDO S.A.C.!"
+
+msgid "FIND THE PROPER MATERIAL FOR YOUR CEILING"
+msgstr "ENCUENTRA EL MATERIAL ADECUADO PARA TU TECHO"
+
+msgid "The user has been saved."
+msgstr "El usuario ha sido guardado."
+
+msgid "New User"
+msgstr "Usuario nuevo"
+
+msgid "Successfully registered user"
+msgstr "Usuario registrado exitosamente"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Email"
+msgstr "Correo"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "New Article"
+msgstr "Nuevo Articulo"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "New Purchase Detail"
+msgstr "Nuevo Detalle de Compra"
+
+msgid "List Articles"
+msgstr "Lista de Articulos"
+
+msgid "Id"
+msgstr "Código"
+
+msgid "Article"
+msgstr "Articulo"
+
+msgid "PurchaseDetails"
+msgstr "Detalle de Compra"
+
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgid "Cost"
+msgstr "Costo"
+
+msgid "List Brands"
+msgstr "Lista de Marcas"
+
+msgid "New Brand"
+msgstr "Nueva Marca"
+
+msgid "List Categories"
+msgstr "Lista de Categorias"
+
+msgid "Login"
+msgstr "Iniciar Sesion"
+
+msgid "CONTACT"
+msgstr "CONTACTANOS"
+
+msgid "New Category"
+msgstr "Nueva Categoria"
+
+msgid "List PurchaseDetails"
+msgstr "Lista de Detalles de Compra"
+
+msgid "List SaleDetails"
+msgstr "Lista de Detalles de Venta"
+
+msgid "New Sale Details"
+msgstr "Nuevo Detalle de Venta"
+
+msgid "Description"
+msgstr "Descripcion"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "Add Article"
+msgstr "Agregar Articulo"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Sale"
+msgstr "Venta"
+
+msgid "SaleDetails"
+msgstr "Detalles de Venta"
+
+msgid "Add Sale"
+msgstr "Agregar Venta"
+
+msgid "Document"
+msgstr "Documento"
+
+msgid "Code"
+msgstr "Codigo Articulo"
+
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Supplier"
+msgstr "proveedor"
+
+msgid "Related Purchases"
+msgstr "Compras relacionadas"
+
+msgid "Related Sales"
+msgstr "Ventas Relacionadas"
+
+msgid "no related Sales"
+msgstr "no hay ventas relacionadas"
+
+msgid "Supplier Id"
+msgstr "Id proveedor"
+
+msgid "User Id"
+msgstr "Id Usuario"
+
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Social Reason"
+msgstr "Razon social"
+
+msgid "Contact Name"
+msgstr "Nombre de Contacto"
+
+msgid "Address"
+msgstr "Direccion"
+
+msgid "Delete"
+msgstr "Borrar"
+
+msgid "List Suppliers"
+msgstr "Lista de Proveedores"
+
+msgid "Created"
+msgstr "Creado"
+
+msgid "Modified"
+msgstr "Modificado"
+
+msgid "Add Sale Detail"
+msgstr "Agregar Detalle de Venta"
+
+msgid "January"
+msgstr "Enero"
+
+msgid "February"
+msgstr "Febrero"
+
+msgid "March"
+msgstr "Marzo"
+
+msgid "April"
+msgstr "Abril"
+
+msgid "May"
+msgstr "Mayo"
+
+msgid "June"
+msgstr "Junio"
+
+msgid "July"
+msgstr "Julio"
+
+msgid "August"
+msgstr "Agosto"
+
+msgid "September"
+msgstr "Septiembre"
+
+msgid "October"
+msgstr "Octubre"
+
+msgid "November"
+msgstr "Noviembre"
+
+msgid "December"
+msgstr "Diciembre"
+
+msgid "Related SaleDetails"
+msgstr "Detalles de Venta relacionadas"
+
+msgid "no related SaleDetails"
+msgstr "no hay detalles de venta relacionadas"
+
+msgid "Purchase Details"
+msgstr "Detalles de la Compra"
+
+msgid "Add {0}"
+msgstr "Agregar {0}"
+
+msgid "Purchase Detail"
+msgstr "detalle de la compra"
+
+msgid "Add"
+msgstr "Agregar"
+
+msgid "Brands"
+msgstr "Marcas"
+
+msgid "Edit {0}"
+msgstr "Editar {0}"
+
+msgid "Brand"
+msgstr "marca"
+
+msgid "Category"
+msgstr "categoría"
+
+msgid "Purchases"
+msgstr "Compras"
+
+msgid "Purchase"
+msgstr "compra"
+
+msgid "User"
+msgstr "Usuario"
+
+msgid "Access"
+msgstr "Acceder"
+
+msgid "Low stock of"
+msgstr "Baja cantidad de"
+
+msgid "min. stock"
+msgstr "stock mínimo"
+
+msgid "Sold"
+msgstr "Vendido"
+
+msgid "Do you not have a permission"
+msgstr "No tienes permiso"
+
+msgid "The article has been purchased."
+msgstr "El artículo ha sido comprado"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
