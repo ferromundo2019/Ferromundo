@@ -15,7 +15,7 @@ $this->start('tb_actions');
 <?php $this->end(); ?>
 <?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
 <h1 class="page-header"><?=__('Categories')?> 
-<?= $this->Html->link('<span class="glyphicon-plus"></span>Add', ['controller'=>'Categories','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
+<?= $this->Html->link('<span class="glyphicon-plus"></span>'.__('Add'), ['controller'=>'Categories','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
 </h1>
 
 <table class="table table-striped" cellpadding="0" cellspacing="0">

@@ -43,6 +43,10 @@ $this->start('tb_body_start');
                     'alt'=>__('English'),
                     'url'=>['controller'=>'App','action'=>'changeLanguage', 'en_US']
                 ]); ?></li>
+                <li><?= $this->Html->image('icons/32/Brasil-Flag-icon.png', [
+                    'alt'=>__('Portuguese'),
+                    'url'=>['controller'=>'App','action'=>'changeLanguage', 'pt_BR']
+                ]); ?></li>
                 </ul>
             </div>
         </div>

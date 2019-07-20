@@ -64,14 +64,20 @@ class SaleDetailsTable extends Table
             ->requirePresence('quantity', 'create')
             //->allowEmptyString('quantity', false);
 
-            ->notEmpty('quantity', 'A quantity is required');
+            ->notEmpty('quantity', 'A quantity is required')
+            ->add('quantity', 'validValue', [
+                'rule' => ['range', 1, 100000]
+            ]);
 
         $validator
             //->numeric('cost')
             //->allowEmptyString('cost');
 
             ->requirePresence('cost', 'create')
-            ->notEmpty('cost', 'A cost is required');
+            ->notEmpty('cost', 'A cost is required')
+            ->add('cost', 'validValue', [
+                'rule' => ['range', 0, 100000]
+            ]);
 
         return $validator;
     }

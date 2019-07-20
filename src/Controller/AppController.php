@@ -75,7 +75,7 @@ class AppController extends Controller
     }
 
     public function changeLanguage($language=null){
-        if($language!=null && in_array($language, ['en_US','es_PE'])){
+        if($language!=null && in_array($language, ['en_US','es_PE','pt_BR'])){
             $this->request->getSession()->write('Config.language',$language);
             return $this->redirect($this->referer());
         }

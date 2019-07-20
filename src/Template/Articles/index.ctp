@@ -17,14 +17,14 @@ $this->start('tb_actions');
 <?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
 
 <h1 class="page-header"><?=__('Articles')?> 
-<?= $this->Html->link('<span class="glyphicon-plus"></span>Add', ['controller'=>'Articles','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
+<?= $this->Html->link('<span class="glyphicon-plus"></span>'.__('Add'), ['controller'=>'Articles','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
 
 
 </h1>
 <table class="table table-striped" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('$articles'); ?></th>
+            <th><?= $this->Paginator->sort('id'); ?></th>
             <th><?= $this->Paginator->sort('name'); ?></th>
             <th><?= $this->Paginator->sort('code'); ?></th>
             <th><?= $this->Paginator->sort('description'); ?></th>

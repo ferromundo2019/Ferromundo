@@ -155,7 +155,7 @@ msgid "Id"
 msgstr "Código"
 
 msgid "Article"
-msgstr "Articulo"
+msgstr "Artículo"
 
 msgid "PurchaseDetails"
 msgstr "Detalle de Compra"
@@ -358,6 +358,9 @@ msgstr "Baja cantidad de"
 msgid "min. stock"
 msgstr "stock mínimo"
 
+msgid "Min. Stock"
+msgstr "Stock Mínimo"
+
 msgid "Sold"
 msgstr "Vendido"
 
@@ -366,6 +369,213 @@ msgstr "No tienes permiso"
 
 msgid "The article has been purchased."
 msgstr "El artículo ha sido comprado"
+
+msgid "Sales"
+msgstr "Ventas"
+
+msgid "sales"
+msgstr "ventas"
+
+msgid "Add"
+msgstr "Agregar"
+
+msgid "Edit Article"
+msgstr "Editar Artículo"
+
+msgid "Delete Article"
+msgstr "Eliminar Artículo"
+
+msgid "List Purchase Details"
+msgstr "Detalles de Compras"
+
+msgid "List Sale Details"
+msgstr "Detalles de Ventas"
+
+msgid "New Sale Detail"
+msgstr "Nuevo Detalle de Venta"
+
+msgid "Article Id"
+msgstr "Artículo"
+
+msgid "Purchase Id"
+msgstr "Compra"
+
+msgid "Sale Id"
+msgstr "Venta"
+
+msgid "Related PurchaseDetails"
+msgstr "Compras Relacionadas"
+
+msgid "Related SaleDetails"
+msgstr "Ventas Relacionadas"
+
+msgid "Detail+"
+msgstr "Agregar Producto"
+
+msgid "Purchased"
+msgstr "Comprado"
+
+msgid "Export to PDF"
+msgstr "Generar PDF"
+
+msgid "Edit Purchase"
+msgstr "Editar Compra"
+
+msgid "Delete Purchase"
+msgstr "Eliminar Compra"
+
+msgid "New Supplier"
+msgstr "Nuevo Proveedor"
+
+msgid "Are you sure to purchased # {0}? This action is irreversible"
+msgstr "¿Está seguro de comprar # {0}? Esta acción es irreversible"
+
+msgid "Edit Purchase Detail"
+msgstr "Editar Detalle de Compra"
+
+msgid "Delete Purchase Detail"
+msgstr "Eliminar Detalle de Compra"
+
+msgid "Edit Sale"
+msgstr "Editar Venta"
+
+msgid "Delete Sale"
+msgstr "Eliminar Venta"
+
+msgid "Are you sure to sell # {0}? This action is irreversible"
+msgstr "¿Está seguro de vender # {0}? Esta acción es irreversible"
+
+msgid "Edit Sale Detail"
+msgstr "Editar Detalle de Venta"
+
+msgid "Delete Sale Detail"
+msgstr "Eliminar Detalle de Venta"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
 
 msgid ""
 msgstr ""

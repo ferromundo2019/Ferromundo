@@ -99,14 +99,20 @@ class ArticlesTable extends Table
             ->requirePresence('price', 'create')
             //->allowEmptyString('price', false);
 
-            ->notEmpty('price', 'A price is required');
+            ->notEmpty('price', 'A price is required')
+            ->add('price', 'validValue', [
+                'rule' => ['range', 0, 100000]
+            ]);
 
         $validator
             //->numeric('stack')
             ->requirePresence('stack', 'create')
             //->allowEmptyString('stack', false);
 
-            ->notEmpty('stack', 'A stock is required');
+            ->notEmpty('stack', 'A stock is required')
+            ->add('stack', 'validValue', [
+                'rule' => ['range', 0, 100000]
+            ]);
 
         $validator
             ->numeric('quantity')

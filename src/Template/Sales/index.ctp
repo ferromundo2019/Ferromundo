@@ -16,7 +16,7 @@ $this->start('tb_actions');
 <?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
 
 <h1 class="page-header"><?=__('Sales')?> 
-<?= $this->Html->link('<span class="glyphicon-plus"></span>Add', ['controller'=>'Sales','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
+<?= $this->Html->link('<span class="glyphicon-plus"></span>'.__('Add'), ['controller'=>'Sales','action'=>'add'], ['class'=> 'btn btn-sm btn-primary pull-right','escape'=>false])?>
 
 </h1>
 

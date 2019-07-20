@@ -74,7 +74,7 @@ $this->end();
             <td><?= $this->Number->format($article->price) ?></td>
         </tr>
         <tr>
-            <td><?= __('Stack') ?></td>
+            <td><?= __('Min. Stock') ?></td>
             <td><?= $this->Number->format($article->stack) ?></td>
         </tr>
         <tr>
